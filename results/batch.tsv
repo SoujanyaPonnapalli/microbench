@@ -1,0 +1,2 @@
+----Summary------------- ----Latency--------------- ----Throughput--------------------
+Block numKeys runTime(s) batch ETH-RBC(x) RBC(ms) ETH(ms) RBC-ETH(x) RBC(ops/ms) ETH(ops/ms)
