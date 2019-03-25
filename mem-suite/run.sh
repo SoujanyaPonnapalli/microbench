@@ -11,6 +11,6 @@ outDir=results/run$1
 for fileName in *.js; do
   echo "Running $fileName ..."
   for ((i=100000; i<4000000; i+=100000)); do
-    node --max-old-space-size=30720 $fileName $i | tee -a $outDir/$fileName;
+    node --expose-gc --max-old-space-size=30720 $fileName $i | tee -a $outDir/$fileName;
   done
 done
